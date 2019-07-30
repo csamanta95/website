@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!--Creates a message on the screen above the button-->
+<p> Click the button! 
+</p>
+<!--Creates a button on the screen stating "Press"-->
+<button onclick="myFunction()">Press</button>
+
+<p id="demo"></p>
+
+<script>
+<!--The function below asks the user for a name and when the name is entered, will return a response to the user-->
+function myFunction() {
+	var person = prompt( "What is your name?", "Enter your name");
+		if (person != null) {
+			document.getElementById("demo").innerHTML =
+			"Nice name! " + person;
+	}
+}
+</script>
+
+</body>
+</html>
